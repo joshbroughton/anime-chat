@@ -7,6 +7,9 @@ Rails.application.routes.draw do
 
   # Define a route that renders a JSON response with a message "Hello World"
   get "hello" => "hello#get"
+
+  # Define a route that renders a JSON response with a message from the OpenAI API
+  get "hello/bot" => "hello#get_bot"
   # Defines the root path route ("/")
   # root "posts#index"
 end
